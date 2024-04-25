@@ -11,3 +11,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
+include(
+    "example-plain-java-module"
+)
