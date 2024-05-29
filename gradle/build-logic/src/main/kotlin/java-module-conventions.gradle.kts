@@ -1,5 +1,8 @@
 @file:Suppress("UnstableApiUsage")
 
+import org.springframework.boot.gradle.plugin.SpringBootPlugin
+
+
 plugins {
     `java-library`
     `java-test-fixtures`
@@ -24,6 +27,15 @@ testing {
             }
         }
     }
+}
+
+dependencies {
+    api(platform(SpringBootPlugin.BOM_COORDINATES))
+    implementation(platform(SpringBootPlugin.BOM_COORDINATES))
+    annotationProcessor(platform(SpringBootPlugin.BOM_COORDINATES))
+    testImplementation(platform(SpringBootPlugin.BOM_COORDINATES))
+    testFixturesApi(platform(SpringBootPlugin.BOM_COORDINATES))
+    testFixturesImplementation(platform(SpringBootPlugin.BOM_COORDINATES))
 }
 
 fun setDefaultJunitProperties(): (Test).() -> Unit = {

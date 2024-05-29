@@ -13,5 +13,6 @@ dependencyResolutionManagement {
 }
 
 include(
-    "example-plain-java-module"
+    "example-plain-java-module",
+    "example-spring-boot-module"
 )
