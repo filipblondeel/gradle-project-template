@@ -1,22 +1,21 @@
 [versions]
-spring-boot = "3.5.5"
-assertj = "3.25.3"
-errorprone = "2.32.0"
+spring-boot = "3.5.6"
+errorprone = "2.42.0"
 
 ## Plugins
 spring-dependency-management = "1.1.7"
 gradle-git-properties = "2.5.3"
-gradle-sonar = "6.1.0.5360"
-gradle-errorprone = "4.1.0"
+gradle-sonar = "6.3.1.5724"
+gradle-errorprone = "4.3.0"
 gradle-node = "7.1.0"
 
 [libraries]
-assertj-core = { module = "org.assertj:assertj-core", version.ref = "assertj" }
 errorprone = { module = "com.google.errorprone:error_prone_core", version.ref = "errorprone" }
 
 [plugins]
 ## Spring Boot - https://docs.spring.io/spring-boot/gradle-plugin/index.html
 springBoot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+## Spring Dependency Management plugin - https://github.com/spring-gradle-plugins/dependency-management-plugin
 springDependencyManagement = { id ="io.spring.dependency-management", version.ref = "spring-dependency-management" }
 
 ## Git properties - https://github.com/n0mer/gradle-git-properties

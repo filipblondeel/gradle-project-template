@@ -3,5 +3,5 @@ plugins {
 }
 
 dependencies {
-    testImplementation(libs.assertj.core)
+    testImplementation("org.assertj:assertj-core")
 }
