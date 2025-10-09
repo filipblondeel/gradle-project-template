@@ -1,5 +1,32 @@
 [versions]
+spring-boot = "3.5.5"
 assertj = "3.25.3"
+errorprone = "2.32.0"
+
+## Plugins
+spring-dependency-management = "1.1.7"
+gradle-git-properties = "2.4.2"
+gradle-sonar = "6.1.0.5360"
+gradle-errorprone = "4.1.0"
+gradle-node = "7.1.0"
 
 [libraries]
 assertj-core = { module = "org.assertj:assertj-core", version.ref = "assertj" }
+errorprone = { module = "com.google.errorprone:error_prone_core", version.ref = "errorprone" }
+
+[plugins]
+## Spring Boot - https://docs.spring.io/spring-boot/gradle-plugin/index.html
+springBoot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+springDependencyManagement = { id ="io.spring.dependency-management", version.ref = "spring-dependency-management" }
+
+## Git properties - https://github.com/n0mer/gradle-git-properties
+gradleGitProperties = { id = "com.gorylenko.gradle-git-properties", version.ref = "gradle-git-properties" }
+
+# SonarQube Scanner for Gradle - https://github.com/SonarSource/sonar-scanner-gradle
+sonar = { id = "org.sonarqube", version.ref="gradle-sonar" }
+
+# Error-prone plugin - https://github.com/tbroyer/gradle-errorprone-plugin
+errorprone = { id ="net.ltgt.errorprone", version.ref = "gradle-errorprone" }
+
+# Gradle Plugin for Node - https://github.com/node-gradle/gradle-node-plugin
+node = { id = "com.github.node-gradle.node", version.ref = "gradle-node" }

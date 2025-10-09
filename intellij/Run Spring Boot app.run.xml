@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Run Spring Boot app" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
     <option name="ACTIVE_PROFILES" value="local" />
-    <module name="gradle-project-template.example-spring-boot-module.main" />
+    <module name="gradle-project-template.example-spring-boot-app.main" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.HelloWorldApplication" />
     <extension name="coverage">
       <pattern>

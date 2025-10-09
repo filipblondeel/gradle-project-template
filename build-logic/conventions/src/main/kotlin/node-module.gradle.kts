@@ -1,5 +1,5 @@
 plugins {
-	id("com.github.node-gradle.node")
+	alias(libs.plugins.node)
 }
 
 // See https://github.com/node-gradle/gradle-node-plugin/blob/main/docs/usage.md#configuring-the-plugin

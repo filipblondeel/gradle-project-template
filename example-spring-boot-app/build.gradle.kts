@@ -1,5 +1,5 @@
 plugins {
-    id("spring-boot-app-conventions") // see gradle/build-logic/src/main/kotlin/spring-boot-app-conventions.gradle.kts
+    id("spring-boot-app")
 }
 
 dependencies {

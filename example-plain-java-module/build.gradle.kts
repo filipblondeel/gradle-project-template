@@ -1,5 +1,5 @@
 plugins {
-    id("java-module-conventions") // see gradle/build-logic/src/main/kotlin/java-module-conventions.gradle.kts
+    id("java-module")
 }
 
 dependencies {
