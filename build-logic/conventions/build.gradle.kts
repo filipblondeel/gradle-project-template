@@ -7,5 +7,5 @@ repositories {
 }
 
 kotlin {
-    jvmToolchain(21) // Currently only Java 21 is supported by the embedded Kotlin compiler for the Gradle .kts build scripts
+    jvmToolchain(24) // Kotlin does not yet support 25 JDK target - using Java 24 for compiling the Gradle .kts build scripts
 }
