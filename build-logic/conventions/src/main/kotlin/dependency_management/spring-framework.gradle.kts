@@ -1,5 +1,9 @@
 @file:Suppress("UnstableApiUsage")
 
+package dependency_management
+
+import libs
+import org.gradle.kotlin.dsl.invoke
 import org.springframework.boot.gradle.plugin.SpringBootPlugin
 
 plugins {

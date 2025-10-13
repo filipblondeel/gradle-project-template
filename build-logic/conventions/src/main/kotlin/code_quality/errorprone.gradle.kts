@@ -1,11 +1,10 @@
+package code_quality
+
 import net.ltgt.gradle.errorprone.errorprone
+import libs
 
 plugins {
 	`java-library`
-
-	// code coverage with JaCoCo
-	jacoco
-	`jacoco-report-aggregation`
 
 	// Static analysis with "Error Prone"
 	alias(libs.plugins.errorprone)

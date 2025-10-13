@@ -3,9 +3,9 @@
 plugins {
     `java-library`
 
-    id("dependency-management")
-    id("testing")
-    id("code-quality")
+    id("dependency_management.conventions")
+    id("testing.conventions")
+    id("code_quality.conventions")
 }
 
 java {
