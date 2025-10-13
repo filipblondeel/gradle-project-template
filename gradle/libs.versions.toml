@@ -8,6 +8,7 @@ gradle-git-properties = "2.5.3"
 gradle-sonar = "6.3.1.5724"
 gradle-errorprone = "4.3.0"
 gradle-node = "7.1.0"
+gradle-owasp-dependencycheck = "12.1.7"
 
 [libraries]
 errorprone = { module = "com.google.errorprone:error_prone_core", version.ref = "errorprone" }
@@ -25,7 +26,10 @@ gradleGitProperties = { id = "com.gorylenko.gradle-git-properties", version.ref 
 sonar = { id = "org.sonarqube", version.ref="gradle-sonar" }
 
 # Error-prone plugin - https://github.com/tbroyer/gradle-errorprone-plugin
-errorprone = { id ="net.ltgt.errorprone", version.ref = "gradle-errorprone" }
+errorprone = { id = "net.ltgt.errorprone", version.ref = "gradle-errorprone" }
+
+# OWASP dependency check plugin - https://github.com/dependency-check/dependency-check-gradle
+owaspDependencyCheck = { id = "org.owasp.dependencycheck", version.ref = "gradle-owasp-dependencycheck" }
 
 # Gradle Plugin for Node - https://github.com/node-gradle/gradle-node-plugin
 node = { id = "com.github.node-gradle.node", version.ref = "gradle-node" }
